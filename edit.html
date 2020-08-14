@@ -98,7 +98,9 @@
 
       </div>
 
-
+      <div class="contact-container">
+          
+      </div>
 
     </div>
 
@@ -274,6 +276,39 @@
           
 
               $("div.music-container").append(band);
+
+        });
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+
+        //fetch contact links
+        db.collection("socials")
+        .get()
+        .then(function(querySnapshot) {
+          querySnapshot.forEach(function(doc) {
+              // doc.data() is never undefined for query doc snapshots
+              //console.log(doc.id, " => ", doc.data());
+              var data = doc.data();
+              console.log(data);
+              var social = document.createElement("div");
+
+              var link = document.createElement("a");
+              var logo = document.createElement("img");
+             
+              
+
+              $(link).attr("href",data.link);
+              $(logo).attr("src",data.logo);
+        
+
+              $(social).addClass("social");
+              $(link).append(logo);
+              $(social).append(link);
+          
+
+              $("div.contact-container").append(social);
 
         });
     })

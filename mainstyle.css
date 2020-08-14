@@ -9,6 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+  background-color: rgb(41, 41, 41);
+}
+
 
 .main-div {
   width: 20%;
@@ -462,4 +466,20 @@ html {
 
 .band h3{
   margin-bottom: 5px;
+}
+
+.contact-container{
+  background-color: rgb(34, 34, 34);
+  display:flex;
+  place-content: center;
+}
+
+.contact-container img{
+  height: 64px;
+  width: 64px;
+  margin: 15px;
+}
+
+.contact-container img:hover{
+  box-shadow: rgb(34, 34, 34);
 }
