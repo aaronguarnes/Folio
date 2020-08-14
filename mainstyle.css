@@ -365,7 +365,7 @@ html {
   position: relative;
   top: 12vh;
   left: 10vw;
-  margin: 20px;
+  margin: 25px;
   padding: 15px;
   padding-top: 5px;
   border-radius: 5px;
@@ -377,14 +377,19 @@ html {
 
 .work h2{
   font-size: 56px;
-  
-  margin-bottom: 10px;
+  line-height: 1em;
   color: #f5e9d7;
 }
 
 .work h4{
   font-size: 18px;
   text-justify: left;
+}
+
+.work p{
+  font-size: 18px;
+  font-weight: 200;
+  color: white;
 }
 
 .music-container{
