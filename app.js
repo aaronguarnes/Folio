@@ -42,7 +42,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
   
   function logout(){
-    location.href = "main.html";
+    location.href = "index.html";
     firebase.auth().signOut();
     
   }
